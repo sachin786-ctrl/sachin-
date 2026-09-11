@@ -1,21 +1,7 @@
-// ============================================
+ 
 // Portfolio - Sachin Kumar
-// ============================================
-
-// ============================================
-// CONFIGURATION - Yahan apni details daalo
-// ============================================
-
-// STEP 1: Google Apps Script deploy karne ke baad
-//         apna Web App URL yahan paste karo:
-const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzExE1HIo_YBS8s5J9NaxocKXZMNr_3gIcSHTJUTGMKR059tPI_GDoHRHpCURGmgmV1/exec";
-// Example: 'https://script.google.com/macros/s/AKfycb.../exec'
-
-// STEP 2: Resume download ke liye password
-//         Yeh static password hai - sirf aap jaante ho
-
-// STEP 3: Resume PDF ka path
+ 
+const url = `${GOOGLE_SCRIPT_URL}?action=checkPassword&password=${encodeURIComponent(enteredPassword)}`;
 const RESUME_PATH = "assets/SachinResume.pdf";
 
 // ============================================
