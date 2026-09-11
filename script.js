@@ -123,10 +123,10 @@ if (contactForm) {
     e.preventDefault();
 
     // Validate Google Script URL
-    if (GOOGLE_SCRIPT_URL === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
+    if (GOOGLE_SCRIPT_URL === "https://script.google.com/macros/s/AKfycbxtVmdC1I-SMycyAmPT50na7oJkXKLuG0POFPEjpTBwtt-Bi-yMt4-I0SCQO2pmnHgn/exec") {
       showFormResponse(
         "error",
-        "⚠️ Google Apps Script URL set nahi hai! script.js mein GOOGLE_SCRIPT_URL update karo.",
+        " Google Apps Script URL set nahi hai! script.js mein GOOGLE_SCRIPT_URL update karo.",
       );
       return;
     }
