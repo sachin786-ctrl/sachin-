@@ -1,7 +1,7 @@
  
 // Portfolio - Sachin Kumar
- 
-const url = `${GOOGLE_SCRIPT_URL}?action=checkPassword&password=${encodeURIComponent(enteredPassword)}`;
+
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyeoXIbYVBsyhAgxmS0SVV1syq_l2QXueZWGovrPetzCcf1mF-liZiZoQPFChdPBrcl/exec";
 const RESUME_PATH = "assets/SachinResume.pdf";
 
 // ============================================
@@ -107,15 +107,6 @@ const submitBtn = document.getElementById("submitBtn");
 if (contactForm) {
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-
-    // Validate Google Script URL
-    if (GOOGLE_SCRIPT_URL === "https://script.google.com/macros/s/AKfycbxtVmdC1I-SMycyAmPT50na7oJkXKLuG0POFPEjpTBwtt-Bi-yMt4-I0SCQO2pmnHgn/exec") {
-      showFormResponse(
-        "error",
-        " Google Apps Script URL set nahi hai! script.js mein GOOGLE_SCRIPT_URL update karo.",
-      );
-      return;
-    }
 
     const originalHTML = submitBtn.innerHTML;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
